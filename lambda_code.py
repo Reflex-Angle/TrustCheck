@@ -37,3 +37,17 @@ def lambda_handler(event, context):
           "body": json.dumps(preds)
                 }
     return response_dict
+
+
+#add this to lambda permissions 
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "sagemaker:InvokeEndpoint",
+            "Resource": "*"
+        }
+    ]
+}
