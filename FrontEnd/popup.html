@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amazon Review Fetcher</title>
+  <style>
+    body{
+        display: flex;
+        width: 300px;
+        background-color: black;
+        flex-direction: column;
+        font-family: monospace;
+        color: aliceblue;
+    }
+    h1{
+        margin-top: 0;
+        text-align: center;
+        font-size: 2.5em;
+        border-bottom: 1px solid white;
+        padding-top: 10px;
+        padding-bottom: 12px;
+    }
+    #asp{
+        font-size: 2em;
+    }
+    #fetch-reviews{
+        padding: 10px;
+        margin:auto;
+        width: 50%;
+        font-family: monospace;
+        background-color: black;
+        color: aliceblue;
+        box-shadow: 5px 5px aliceblue;
+    }
+    #fetch-reviews:active {
+        box-shadow: 0 0 #666;
+        transform: translateY(5px);
+        transform: translateX(5px);
+    }
+    #butdiv{
+        margin-top: 16px;
+        display: flex;
+    }
+    input{
+        width: 200px;
+        height: 30px;
+        background-color: black;
+        border: 1px white solid;
+        color: white;
+        border-radius: 2px;
+        font-family: monospace;
+    }
+    #verdict{
+        background-color: aliceblue;
+        color: black;
+        margin-top: 14px;
+        padding: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
+        line-height: 1.5;
+    }
+    #ver{
+        background-color: aliceblue;
+        font-size: 1.8em;
+        font-weight: bold;
+    }
+    #out{
+        font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <h1>TRUSTCHECK</h1>
+  <div>
+    <label for="messageInput" id = "asp">Aspect:  </label>
+    <input type="text" id="messageInput" placeholder="Enter your Aspect" />
+  </div>
+  <div id = "butdiv">
+    <button id="fetch-reviews">Fetch Reviews</button>
+  </div>
+  <div id = "verdict">
+    <span id = "ver">Vedict: </span>
+    <span id = "out"></span>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
