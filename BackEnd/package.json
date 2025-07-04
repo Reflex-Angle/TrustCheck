@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "emoji-strip": "^1.0.1",
+    "express": "^4.21.1",
+    "languagedetect": "^2.0.0"
+  }
+}
